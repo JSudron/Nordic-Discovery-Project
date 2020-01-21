@@ -123,8 +123,30 @@
               componentRestrictions: {country: ['dk', 'fi', 'is', 'no', 'se']}
         });
     places = new google.maps.places.PlacesService(map);
-
+    
+    // DOM event listener
     autocomplete.addListener('place_changed', onPlaceChanged);
     document.getElementById('category').addEventListener('change', onPlaceChanged);
 }
+
+// When the user selects a city, get the place details for the city and
+// zoom the map in on the city.
+function onPlaceChanged() {
+    var place = autocomplete.getPlace();
+    if ($('accomodation').is('selected')) {
+        if (place.geometry) {
+            map.panTo(place.geometry.location);
+            map.setZoom(14);
+            var search = {
+                bounds: map.getBounds(),
+                types: ['lodging']
+            };
+            doNearbySearch(search);
+        }
+        else {
+            $('#autocomplete').attr('placeholder', 'Enter a town or city');
+        }
+    }
+}
+
 
