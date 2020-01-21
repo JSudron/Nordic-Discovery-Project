@@ -22,7 +22,7 @@
     <!---NAVBAR-->
     
     <header class="container-fluid navbar-section">
-        <nav class="navbar navbar-expanded-md fixed-top navbar-dark">
+        <nav class="navbar navbar-expand-md fixed-top navbar-dark">
             <div class="container-fluid">
                 <a class="navbar-brand" href="index.html">Nordic Discovery</a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-small"> <!--Navbar collapses on mobile devices-->
@@ -40,6 +40,10 @@
                 </div>
             </div>
         </nav>
+    </header>
+
+    <section class="container-fluid">
+        <section class="row">
 
         <!--SEARCH FILTERS-->
 
@@ -47,13 +51,13 @@
             <h3 class="section-heading">SEARCH</h3>
             <div class="row">
                 <div class="col-12 col-md-6 col-lg-12">
-                    <h4 class="section-heading">Where are you going?</h4>
+                    <h4 class="search-heading">Where are you going?</h4>
                     <div id="location-field">
                         <input id="autocomplete" placeholder="Enter town or city" type="text"/>
                     </div>
                 </div>
                 <div class="col-12 col-md-6 col-lg-12">
-                    <h4 class="section-heading">What are you looking for?</h4>
+                    <h4 class="search-heading">What are you looking for?</h4>
                     <div id="controls">
                         <select id="category">
                             <option value="" selected>Click to select</option>
@@ -65,7 +69,42 @@
             <button id="reset-button" type="button" class="btn btn-primary" onclick="rest()">Reset</button>
         </div>
 
-    </header>
+        <!--MAP-->
+
+        <div class="col-12 col-lg-9">
+            <h3 class="section-heading">MAP</h3>
+            <div id="map"></div>
+
+            <!--INFO BOX FOR SEARCH RESULTS ON MAP-->
+
+            <div style="display: none">
+                <div id="info-content">
+                    <table>
+                        <tr id="iw-url-row" class="iw_table_row">
+                            <td id="iw-icon" class="iw_table_icon"></td>
+                            <td id="iw-url"></td>
+                        </tr>
+                        <tr id="iw-address-row" class="iw-table-row">
+                            <td class="iw_attribute_name">Address: </td>
+                            <td class="iw-address"></td>
+                        </tr>
+                        <tr id="iw-phone-row" class="iw-table-row">
+                            <td class="iw_attribute_name">Telephone: </td>
+                            <td class="iw-phone"></td>
+                        </tr>
+                        <tr id="iw-rating-row" class="iw-table-row">
+                            <td class="iw_attribute_name">Rating: </td>
+                            <td class="iw-address"></td>
+                        </tr>
+                        <tr id="iw-Website-row" class="iw-table-row">
+                            <td class="iw_attribute_name">Website: </td>
+                            <td class="iw-address"></td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </section>
+    </section>
 
     <!--JQuery, Popper.js & Bootstrap JS-->
 
