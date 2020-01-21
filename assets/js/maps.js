@@ -113,4 +113,18 @@
     infoWindow = new google.maps.InfoWindow({
         content: document.getElementById('info-content')
     });
+
+    // Create the autocomplete object and associate it with the UI input control.
+    // Restrict the search to the default country, and to place type "cities".
+    autocomplete = new google.maps.places.Autocomplete(
+        /** @type {!HTMLInputElement} */ 
+        (document.getElementById('autocomplete')), {
+              types: ['(cities)'],
+              componentRestrictions: {country: ['dk', 'fi', 'is', 'no', 'se']}
+        });
+    places = new google.maps.places.PlacesService(map);
+
+    autocomplete.addListener('place_changed', onPlaceChanged);
+    document.getElementById('category').addEventListener('change', onPlaceChanged);
 }
+
