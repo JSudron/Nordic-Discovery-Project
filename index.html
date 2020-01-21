@@ -41,6 +41,30 @@
             </div>
         </nav>
 
+        <!--SEARCH FILTERS-->
+
+        <div class="col-12 col-lg-3">
+            <h3 class="section-heading">SEARCH</h3>
+            <div class="row">
+                <div class="col-12 col-md-6 col-lg-12">
+                    <h4 class="section-heading">Where are you going?</h4>
+                    <div id="location-field">
+                        <input id="autocomplete" placeholder="Enter town or city" type="text"/>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-12">
+                    <h4 class="section-heading">What are you looking for?</h4>
+                    <div id="controls">
+                        <select id="category">
+                            <option value="" selected>Click to select</option>
+                            <option id="accomodation" value="accomodation">Hotels</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+            <button id="reset-button" type="button" class="btn btn-primary" onclick="rest()">Reset</button>
+        </div>
+
     </header>
 
     <!--JQuery, Popper.js & Bootstrap JS-->
