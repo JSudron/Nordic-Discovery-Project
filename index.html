@@ -7,12 +7,9 @@
 
     <!--Bootstrap & CSS stylesheet links-->
 
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
-		type="text/css" />
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
-		type="text/css" />
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.3.1/css/hover-min.css"
-		type="text/css" />
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" type="text/css" />
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" type="text/css" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.3.1/css/hover-min.css" type="text/css" />
 	<link rel="stylesheet" href="assets/css/style.css">
 
     <title>Nordic Discovery</title>
@@ -48,26 +45,26 @@
         <!--SEARCH FILTERS-->
 
         <div class="col-12 col-lg-3">
-            <h3 class="section-heading">SEARCH</h3>
-            <div class="row">
-                <div class="col-12 col-md-6 col-lg-12">
-                    <h4 class="search-heading">Where are you going?</h4>
-                    <div id="location-field">
-                        <input id="autocomplete" placeholder="Enter town or city" type="text"/>
+                <h3 class="section-heading">Filters</h3>
+                <div class="row">
+                    <div class="col-12 col-md-6 col-lg-12">
+                        <p class="lead"><small>Where would you like to go?</small></p>
+                        <div id="locationField">
+                            <input id="autocomplete" placeholder="Enter a town or city" type="text" />
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-12">
+                        <p class="lead" id="looking-for"><small>What are you looking for?</small></p>
+                        <div id="controls">
+                            <select id="category">
+                                <option value="" selected>Select One</option>
+                                <option id="accommodation" value="accommodation">Hotels</option>
+                            </select>
+                        </div>
                     </div>
                 </div>
-                <div class="col-12 col-md-6 col-lg-12">
-                    <h4 class="search-heading">What are you looking for?</h4>
-                    <div id="controls">
-                        <select id="category">
-                            <option value="" selected>Click to select</option>
-                            <option id="accomodation" value="accomodation">Hotels</option>
-                        </select>
-                    </div>
-                </div>
+                <h6><button id="reset-button" type="button" class="btn btn-primary" onclick="reset()"><strong>Reset</strong></button></h6>
             </div>
-            <button id="reset-button" type="button" class="btn btn-primary" onclick="rest()">Reset</button>
-        </div>
 
         <!--MAP-->
 
@@ -164,15 +161,9 @@
 
     <!--JQuery, Popper.js & Bootstrap JS-->
 
-    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
-		integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous">
-	</script>
-	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-		integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
-	</script>
-	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
-		integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous">
-	</script>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
 
 	<!--Google Maps API-->
 
