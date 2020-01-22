@@ -16,11 +16,6 @@ body {
     color: #FFFFFF;
 }
 
-.navbar-toggler:focus, .navbar-toggler:active {
-    outline: none;
-    box-shadow: none;
-  }
-
 .nav-link {
     font-family: 'Josefin Sans', sans-serif;
     font-size: 1.2rem;
@@ -115,14 +110,19 @@ body {
     border: transparent;
 }
 
-.btn-primary:hover {
-    background-color: #FCA311;
-    color: #FFFFFF;
-    border: transparent;
-    transition: color 0.5s ease-in-out;
-    -moz-transition: color 0.5s ease-in-out;
-    -webkit-transition: color 0.5s ease-in-out;
-    -o-transition: color 0.5s ease-in-out;
+.btn:hover, .btn-primary:active {
+    background-color: #FCA311 !important;
+    color: #FFFFFF !important;
+    border: transparent !important;
+    transition: color 0.5s ease-in-out !important;
+    -moz-transition: color 0.5s ease-in-out !important;
+    -webkit-transition: color 0.5s ease-in-out !important;
+    -o-transition: color 0.5s ease-in-out !important;
+}
+
+.btn:focus, .btn:active {
+  outline: none !important;
+  box-shadow: none !important; 
 }
 
 /*-----------------------MAP */
