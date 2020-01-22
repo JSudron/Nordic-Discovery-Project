@@ -1,9 +1,28 @@
 /*-----------------------FONT */
+/*-----------------------FONT */
+@import url('https://fonts.googleapis.com/css?family=Skranji:100,200,300,400,500,600,700|Josefin+Sans&display=swap:100,200,300,400,500,600,700');
 
 /*-----------------------SPECIAL MARGINS/HEADINGS/TEXT */
 
-.section-heading {
-    margin-top: 65px;
+body {
+    padding-top: 80px;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+.navbar-dark .navbar-brand {
+    font-family: 'Skranji', cursive;
+    font-size: 2rem;
+    color: #FFFFFF;
+}
+
+.nav-link {
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 1.2rem;
+}
+
+.section-heading, map-heading {
+    font-family: 'Skranji', cursive;
+    font-weight: 300;
 }
 
 /*-----------------------NAVBAR */

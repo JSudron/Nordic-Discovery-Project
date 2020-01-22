@@ -207,6 +207,20 @@ function onPlaceChanged() {
             $('#autocomplete').attr("placeholder", "Enter a town or city");
         }
     }
+    else if ($("#stadium").is(':selected')) {
+        if (place.geometry) {
+            map.panTo(place.geometry.location);
+            map.setZoom(13);
+            var search = {
+                bounds: map.getBounds(),
+                types: ['stadium']
+            };
+            doNearbySearch(search);
+        }
+        else {
+            $('#autocomplete').attr("placeholder", "Enter a town or city");
+        }
+    }
     else if ($("#food").is(':selected')) {
         if (place.geometry) {
             map.panTo(place.geometry.location);
@@ -255,7 +269,7 @@ function onPlaceChanged() {
             map.setZoom(13);
             var search = {
                 bounds: map.getBounds(),
-                types: ['shopping_mall', 'store']
+                types: ['shopping_mall', 'store', 'electronics_store', 'clothing_store', 'shoe_store', 'book_store']
             };
             doNearbySearch(search);
         }
