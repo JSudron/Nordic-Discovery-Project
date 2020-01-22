@@ -12,7 +12,7 @@ var hostnameRegexp = new RegExp('^https?://.+?/');
 
 var countries = {
     'uk': {                     //For centering the map as opposed to searching.
-        center: {lat: 62.8, lng: 2.6},
+        center: { lat: 62.8, lng: 2.6 },
         zoom: 4
     }
 };
@@ -133,9 +133,9 @@ function initMap() {
         /** @type {!HTMLInputElement} */
         (
             document.getElementById('autocomplete')), {
-            types: ['(cities)'],
-            componentRestrictions: { country: ['dk', 'fi', 'is', 'no', 'se']}
-        });
+        types: ['(cities)'],
+        componentRestrictions: { country: ['dk', 'fi', 'is', 'no', 'se'] }
+    });
     places = new google.maps.places.PlacesService(map);
 
 
@@ -154,7 +154,7 @@ function onPlaceChanged() {
     if ($("#accommodation").is(':selected')) {
         if (place.geometry) {
             map.panTo(place.geometry.location);
-            map.setZoom(14);
+            map.setZoom(13);
             var search = {
                 bounds: map.getBounds(),
                 types: ['lodging']
@@ -165,12 +165,109 @@ function onPlaceChanged() {
             $('#autocomplete').attr("placeholder", "Enter a town or city");
         }
     }
+    else if ($("#camping").is(':selected')) {
+        if (place.geometry) {
+            map.panTo(place.geometry.location);
+            map.setZoom(13);
+            var search = {
+                bounds: map.getBounds(),
+                types: ['campground']
+            };
+            doNearbySearch(search);
+        }
+        else {
+            $('#autocomplete').attr("placeholder", "Enter a town or city");
+        }
+    }
+    else if ($("#attraction").is(':selected')) {
+        if (place.geometry) {
+            map.panTo(place.geometry.location);
+            map.setZoom(13);
+            var search = {
+                bounds: map.getBounds(),
+                types: ['art_gallery', 'aquarium', 'amusement_park', 'museum', 'tourist_attraction', 'zoo']
+            };
+            doNearbySearch(search);
+        }
+        else {
+            $('#autocomplete').attr("placeholder", "Enter a town or city");
+        }
+    }
+    else if ($("#park").is(':selected')) {
+        if (place.geometry) {
+            map.panTo(place.geometry.location);
+            map.setZoom(13);
+            var search = {
+                bounds: map.getBounds(),
+                types: ['park']
+            };
+            doNearbySearch(search);
+        }
+        else {
+            $('#autocomplete').attr("placeholder", "Enter a town or city");
+        }
+    }
+    else if ($("#food").is(':selected')) {
+        if (place.geometry) {
+            map.panTo(place.geometry.location);
+            map.setZoom(13);
+            var search = {
+                bounds: map.getBounds(),
+                types: ['cafe', 'restaurant', 'bakery']
+            };
+            doNearbySearch(search);
+        }
+        else {
+            $('#autocomplete').attr("placeholder", "Enter a town or city");
+        }
+    }
+    else if ($("#drink").is(':selected')) {
+        if (place.geometry) {
+            map.panTo(place.geometry.location);
+            map.setZoom(13);
+            var search = {
+                bounds: map.getBounds(),
+                types: ['bar']
+            };
+            doNearbySearch(search);
+        }
+        else {
+            $('#autocomplete').attr("placeholder", "Enter a town or city");
+        }
+    }
+    else if ($("#club").is(':selected')) {
+        if (place.geometry) {
+            map.panTo(place.geometry.location);
+            map.setZoom(13);
+            var search = {
+                bounds: map.getBounds(),
+                types: ['night_club']
+            };
+            doNearbySearch(search);
+        }
+        else {
+            $('#autocomplete').attr("placeholder", "Enter a town or city");
+        }
+    }
+    else if ($("#shopping").is(':selected')) {
+        if (place.geometry) {
+            map.panTo(place.geometry.location);
+            map.setZoom(13);
+            var search = {
+                bounds: map.getBounds(),
+                types: ['shopping_mall', 'store']
+            };
+            doNearbySearch(search);
+        }
+        else {
+            $('#autocomplete').attr("placeholder", "Enter a town or city");
+        }
+    }
 }
-
 
 function doNearbySearch(search) {
 
-    places.nearbySearch(search, function(results, status) {
+    places.nearbySearch(search, function (results, status) {
 
         if (status === google.maps.places.PlacesServiceStatus.OK) {
             clearResults();
@@ -216,7 +313,7 @@ function clearMarkers() {
 
 
 function dropMarker(i) {
-    return function() {
+    return function () {
         markers[i].setMap(map);
     };
 }
@@ -232,16 +329,10 @@ function addResult(result, i) {
     // Creates striped effect in results table
     var tr = document.createElement('tr');
     tr.style.backgroundColor = (i % 2 === 0 ? '#F0F0F0' : '#FFFFFF');
-    tr.onclick = function() {
+    tr.onclick = function () {
         google.maps.event.trigger(markers[i], 'click');
 
-
-        // Scrolls to the map section when you click on a search result
-        $([document.documentElement, document.body]).animate({
-            scrollTop: $("#map").offset().top
-        }, 500);
-
-    };
+    }
 
 
     var iconTd = document.createElement('td');
@@ -258,7 +349,6 @@ function addResult(result, i) {
     results.appendChild(tr);
 }
 
-
 function clearResults() {
     var results = document.getElementById('results');
     while (results.childNodes[0]) {
@@ -272,18 +362,20 @@ function clearResults() {
 function showInfoWindow() {
     var marker = this;
     places.getDetails({ placeId: marker.placeResult.place_id },
-        function(place, status) {
+        function (place, status) {
             if (status !== google.maps.places.PlacesServiceStatus.OK) {
                 return;
             }
             infoWindow.open(map, marker);
             buildIWContent(place);
+
         });
 }
 
 
 // Load the place information into the HTML elements used by the info window.
 function buildIWContent(place) {
+
     document.getElementById('iw-icon').innerHTML = '<img class="hotelIcon" ' +
         'src="' + place.icon + '"/>';
     document.getElementById('iw-url').innerHTML = '<b><a href="' + place.url +
@@ -300,9 +392,8 @@ function buildIWContent(place) {
     }
 
 
-    // Assign a five-star rating to the hotel, using a black star ('&#10029;')
-    // to indicate the rating the hotel has earned, and a white star ('&#10025;')
-    // for the rating points not achieved.
+    // Assign a five-star rating to the place
+    // to indicate the rating the place has earned, and a white star ('&#10025;')
     if (place.rating) {
         var ratingHtml = '';
         for (var i = 0; i < 5; i++) {
@@ -319,7 +410,6 @@ function buildIWContent(place) {
     else {
         document.getElementById('iw-rating-row').style.display = 'none';
     }
-
 
     // The regexp isolates the first part of the URL (domain plus subdomain)
     // to give a short URL for displaying in the info window.
