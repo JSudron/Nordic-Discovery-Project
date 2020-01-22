@@ -10,22 +10,28 @@ body {
     color: #14213D;
 }
 
-.navbar-dark .navbar-brand {
+.navbar .navbar-brand {
     font-family: 'Skranji', cursive;
     font-size: 2rem;
     color: #FFFFFF;
 }
 
+.navbar-toggler:focus, .navbar-toggler:active {
+    outline: none;
+    box-shadow: none;
+  }
+
 .nav-link {
     font-family: 'Josefin Sans', sans-serif;
     font-size: 1.2rem;
+    color: #FFFFFF;
 }
 
 .section-heading {
     margin-bottom: 20px;
     font-family: 'Skranji', cursive;
     font-weight: 300;
-    font-size: 1.5rem;
+    font-size: 1.7rem;
     text-align: center;
 }
 
@@ -36,10 +42,41 @@ body {
 
 /*-----------------------NAVBAR */
 
-.navbar-dark {
+.navbar {
     background-color: #FCA311;
+    position: fixed;
+    margin-bottom: 0;
+    width: 100vw;
+    border: 0;
+    z-index: 100;
 }
 
+.navbar .navbar-toggler {
+    border: 0;
+}
+
+.navbar-toggler-icon {
+        background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,255,255, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+
+.navbar-toggler-icon:active {
+        background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(20,33,61, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+
+.navbar-links {
+    color: #FFFFFF;
+    text-decoration: none;
+    text-align: center;
+}
+
+.navbar-links:hover {
+    color: #14213D;
+    text-decoration: none;
+    transition: color 0.5s ease-in-out;
+    -moz-transition: color 0.5s ease-in-out;
+    -webkit-transition: color 0.5s ease-in-out;
+    -o-transition: color 0.5s ease-in-out;
+}
 /*-----------------------SEARCH FILTERS */
 
 #category {
@@ -60,7 +97,9 @@ body {
 #autocomplete {
     width: 100%;
     height: 40px;
-    border-color: #14213D;
+    color: #14213D;
+    background-color: #E5E5E5;
+    border: transparent;
     text-align: center;
 }
 
