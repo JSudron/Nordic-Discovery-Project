@@ -26,13 +26,6 @@ body {
     font-family: 'Skranji', cursive;
     font-weight: 300;
     font-size: 1.5rem;
-}
-
-.map-heading {
-    margin-bottom: 20px;
-    font-family: 'Skranji', cursive;
-    font-weight: 300;
-    font-size: 1.5rem;
     text-align: center;
 }
 
@@ -55,6 +48,7 @@ body {
     color: #14213D;
     background-color: #E5E5E5;
     border: transparent;
+    text-align-last: center;
 }
 
 #locationField {
