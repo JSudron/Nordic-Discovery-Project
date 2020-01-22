@@ -5,8 +5,9 @@
 /*-----------------------SPECIAL MARGINS/HEADINGS/TEXT */
 
 body {
-    padding-top: 80px;
+    padding-top: 90px;
     font-family: 'Josefin Sans', sans-serif;
+    color: #14213D;
 }
 
 .navbar-dark .navbar-brand {
@@ -21,26 +22,101 @@ body {
 }
 
 .section-heading, map-heading {
+    margin-bottom: 20px;
     font-family: 'Skranji', cursive;
     font-weight: 300;
+    text-align: center;
 }
 
 /*-----------------------NAVBAR */
 
-.navbar {
-    background-color: black;
+.navbar-dark {
+    background-color: #FCA311;
 }
 
 /*-----------------------SEARCH FILTERS */
 
+#category {
+    height: 40px;
+    color: #14213D;
+    background-color: #E5E5E5;
+    border: transparent;
+}
+
+#locationField {
+    margin-top: 15px;
+    margin-bottom: 15px;
+    width: 100%;
+}
+
+#autocomplete {
+    width: 100%;
+    height: 40px;
+    border-color: #14213D;
+}
+
+.select-option {
+    margin-top: 15px;
+    text-align: center;
+}
+
+.btn-primary {
+    margin: 25px 25px;
+    background-color: #FCA311;
+    color: #FFFFFF;
+    border: transparent;
+}
+
+.btn-primary:hover {
+    background-color: #14213D;
+    color: #FFFFFF;
+    border: transparent;
+    transition: color 0.5s ease-in-out;
+    -moz-transition: color 0.5s ease-in-out;
+    -webkit-transition: color 0.5s ease-in-out;
+    -o-transition: color 0.5s ease-in-out;
+}
 
 /*-----------------------MAP */
 
 #map {
+    margin-bottom: 20px;
     width: 100%;
     height: 70vh;
-    background-color: black;
+    background-color: #14213D;
 }
 
 
 /*-----------------------FOOTER */
+
+footer {
+    margin: 0;
+    background-color: #FCA311;
+    color: #FFFFFF;
+}
+
+#footer-info {
+    padding: 20px;
+    text-align: left;
+}
+
+.icon-border a i {
+    width: 32px;
+    height: 32px;
+    padding: 12px 0;
+    border-radius: 50%;
+    font-size: 15px;
+    line-height: 7px;
+    text-align: center;
+    background: #14213D;
+    color: #E5E5E5;
+}
+
+.icon-border i:hover {
+    background: #E5E5E5;
+    color: #14213D;
+    transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -webkit-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+} 

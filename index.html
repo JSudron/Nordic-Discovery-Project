@@ -45,18 +45,18 @@
         <!--SEARCH FILTERS-->
 
         <div class="col-12 col-lg-3">
-                <h3 class="section-heading">Filters</h3>
+                <h3 class="section-heading">Search Scandanavia & Iceland</h3>
                 <div class="row">
                     <div class="col-12 col-md-6 col-lg-12">
                         <h4 class="lead">Where are you travelling to?</h4>
-                        <div id="locationField">
+                        <div class="location-option" id="locationField">
                             <input id="autocomplete" placeholder="Enter a town or city" type="text" />
                         </div>
                     </div>
-                    <div class="col-12 col-md-6 col-lg-12">
+                    <div class="col-12 col-md-6 col-lg-6">
                         <h4 class="lead" id="looking-for">What are you looking for?</h4>
                         <div id="controls">
-                            <select id="category">
+                            <select class="select-option" id="category">
                                 <option value="" selected>Click to select</option>
                                 <option id="accommodation" value="accommodation">Hotels</option>
                                 <option id="camping" value="accommodation">Camping</option>
@@ -71,7 +71,7 @@
                         </div>
                     </div>
                 </div>
-                <h6><button id="reset-button" type="button" class="btn btn-primary" onclick="reset()">Reset</button></h6>
+                <h6><button id="reset-button" type="button" class="btn btn-primary mx-auto" onclick="reset()">Reset</button></h6>
             </div>
 
         <!--MAP-->
@@ -129,14 +129,14 @@
     <!--FOOTER-->
     <!--Taken from tutorial project from Code Institue lessons-->
     <footer class="container-fluid">
-		<div class="footer-section row">
+		<div class="footer-section row" id="footer-info">
 			<div class="col-md-6">
-				<h5 class="uppercase footer-header general-sub">About Us</h5>
-				<p class="inline-block footer-text">At Nordic Discovery we aim to make visiting our part of the world as simple as possible</p>
+				<h5 class="uppercase footer-header">About Us</h5>
+				<p class="inline-block footer-text">At Nordic Discovery we aim to make visiting our part of the world as simple as possible!</p>
 			</div>
 			<div class="col-md-6">
-				<h5 class="uppercase footer-header general-sub">Follow us on Social Media</h5>
-				<ul class="list-inline social-links">
+				<h5 class="uppercase footer-header">Follow us on Social Media</h5>
+				<ul class="list-inline social-links icon-border">
 					<li class="list-inline-item">
 						<a target="_blank" href="https://www.facebook.com/JoeSudronYeah">
 							<i class="fa fa-facebook" aria-hidden="true"></i>

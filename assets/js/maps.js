@@ -111,7 +111,7 @@ function initMap() {
                 "elementType": "all",
                 "stylers": [
                     {
-                        "color": "#00A896"
+                        "color": "#14213D"
                     },
                     {
                         "visibility": "on"
