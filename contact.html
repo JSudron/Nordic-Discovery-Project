@@ -36,14 +36,39 @@
 	<header class="container-fluid navbar-section">
 		<nav class="navbar navbar-expand-md fixed-top">
 			<div class="container-fluid">
-				<a class="navbar-brand navbar-links mx-auto" onclick="openNav()">Nordic   Discovery</a>
+				<a class="navbar-brand navbar-links mx-auto" onclick="openNav()">Nordic Discovery</a>
 				</div>
 			</div>
 		</nav>
 	</header>
 
+    <!--CONTACT FORM-->
 
-    	<!--FOOTER-->
+    <div class="container-fluid text-center bookings-container" id="bookings">
+        <h3 class="contact-heading uppercase">Contact Us</h3>
+        <br>
+        <i class="fa fa-envelope"></i>
+        <div class="line-divider"></div>
+        <br>
+            <h4 class="lead">If you have any issues with our site or would like to have any locations you'd like added to our search
+            <br>please fill in the form below & we'll be in touch</h4>
+            <br>
+        <div class="center-form col-lg-6 mx-auto">
+            <form onsubmit="return sendMail(this);">
+                <input type="text" name="name" id="fullname" class="form-control" placeholder="Name" required/><br>
+                <input type="email" name="emailaddress" id="emailaddress" class="form-control" placeholder="E-mail" required/><br>
+                <textarea rows="6" name="query" id="query" class="form-control" placeholder="Query" required></textarea><br>
+                <div class="form-row text-center">
+                    <div class="col">
+                        <button id="submit-button" type="submit" class="btn btn-primary">Submit</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+
+
+    <!--FOOTER-->
 	<!--Taken from tutorial project from Code Institue lessons-->
 
 	<footer class="container-fluid">

@@ -21,8 +21,8 @@ body {
     color: #FFFFFF;
 }
 
-.section-heading {
-    margin-bottom: 20px;
+.section-heading, .contact-heading {
+    margin-bottom: 15px;
     margin-top: 15px;
     font-family: 'Skranji', cursive;
     font-weight: 300;
@@ -183,11 +183,19 @@ table {
     margin-right: 50px;
 }
 
+/*-----------------------CONTACT */
+
+.fa-envelope {
+    font-size: 2.5rem;
+}
+
+
 /*-----------------------FOOTER */
 
 footer {
     margin-top: 20px;
     background-color: #FCA311;
+    background-color: #14213D;
     color: #FFFFFF;
 }
 
