@@ -35,6 +35,18 @@ body {
     text-align: center;
 }
 
+.iw_table_row {
+    font-size: 0.6rem;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+@media (min-width: 768px) {
+    .iw_table_row {
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 1rem;
+    }
+}
+
 /*-----------------------NAVBAR */
 
 .navbar {
