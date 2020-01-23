@@ -1,62 +1,67 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 
-    <!--Bootstrap & CSS stylesheet links-->
+	<!--Bootstrap & CSS stylesheet links-->
 
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" type="text/css" />
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" type="text/css" />
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.3.1/css/hover-min.css" type="text/css" />
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
+		type="text/css" />
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+		type="text/css" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.3.1/css/hover-min.css"
+		type="text/css" />
 	<link rel="stylesheet" href="assets/css/style.css">
 
-    <title>Nordic Discovery</title>
+	<title>Nordic Discovery</title>
 </head>
+
 <body>
 
-    <!---NAVBAR-->
-    
-    <header class="container-fluid navbar-section">
-        <nav class="navbar navbar-expand-md fixed-top">
-            <div class="container-fluid">
-                <a class="navbar-brand navbar-links" href="index.html">Nordic Discovery</a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-small"> <!--Navbar collapses on mobile devices-->
+	<!---NAVBAR-->
+
+	<header class="container-fluid navbar-section">
+		<nav class="navbar navbar-expand-md fixed-top">
+			<div class="container-fluid">
+				<a class="navbar-brand navbar-links" href="index.html">Nordic Discovery</a>
+				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-small"> <!--Navbar collapses on mobile devices-->
                     <span class="navbar-toggler-icon "></span>
                 </button>
-                <div class="collapse navbar-collapse" id="navbar-small">
-                    <ul class="navbar-nav nav">
-                        <li class="nav-item">
-                            <a class="nav-link active" href="index.html">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link active" href="#">Contact</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
-    </header>
+				<div class="collapse navbar-collapse" id="navbar-small">
+					<ul class="navbar-nav nav">
+						<li class="nav-item">
+							<a class="nav-link active" href="index.html">Home</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link active" href="#">Contact</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+	</header>
 
-    <section class="container-fluid">
-        <section class="row">
+	<section class="container-fluid">
+		<section class="row">
 
-        <!--SEARCH FILTERS-->
+			<!--SEARCH FILTERS-->
 
-        <div class="col-12 col-lg-3">
-                <h3 class="section-heading">Search Scandanavia & Iceland</h3>
-                <div class="row">
-                    <div class="col-12 col-md-6 col-lg-12">
-                        <h4 class="lead">Where are you travelling to?</h4>
-                        <div class="location-option" id="locationField">
-                            <input id="autocomplete" placeholder="Enter a town or city" type="text" />
+			<div class="col-12 col-lg-3">
+				<h3 class="section-heading">Search Scandanavia & Iceland</h3>
+				<div class="row">
+					<div class="col-12 col-md-6 col-lg-12">
+						<h4 class="lead">Where are you travelling to?</h4>
+						<div class="location-option" id="locationField">
+							<input id="autocomplete" placeholder="Enter a town or city" type="text" />
                         </div>
-                    </div>
-                    <div class="col-12 col-md-6 col-lg-12">
-                        <h4 class="lead" id="looking-for">What are you looking for?</h4>
-                        <div id="controls">
-                            <select class="select-option" id="category">
+						</div>
+						<div class="col-12 col-md-6 col-lg-12">
+							<h4 class="lead" id="looking-for">What are you looking for?</h4>
+							<div id="controls">
+								<select class="select-option" id="category">
                                 <option value="" selected>Click to select</option>
                                 <option id="accommodation" value="accommodation">Hotels</option>
                                 <option id="camping" value="accommodation">Camping</option>
@@ -68,71 +73,74 @@
                                 <option id="club" value="attraction">Clubs</option>
                                 <option id="shopping" value="attraction">Shopping</option>
                             </select>
-                        </div>
-                    </div>
-                </div>                
-                <h6><button id="reset-button" type="button" class="btn btn-primary" onclick="reset()">Reset</button></h6>
-            </div>
+							</div>
+						</div>
+					</div>
+					<h6><button id="reset-button" type="button" class="btn btn-primary" onclick="reset()">Reset</button>
+					</h6>
+				</div>
 
-        <!--MAP-->
+				<!--MAP-->
+                
+				<div class="col-12 col-lg-9">
+					<h3 class="section-heading">MAP</h3>
+					<div id="map"></div>
 
-        <div class="col-12 col-lg-9">
-            <h3 class="section-heading">MAP</h3>
-            <div id="map"></div>
+					<!--INFO BOX FOR SEARCH RESULTS ON MAP-->
 
-            <!--INFO BOX FOR SEARCH RESULTS ON MAP-->
+					<div style="display: none">
+						<div id="info-content">
+							<table>
+								<tr id="iw-url-row" class="iw_table_row">
+									<td id="iw-icon" class="iw_table_icon"></td>
+									<td id="iw-url"></td>
+								</tr>
+								<tr id="iw-address-row" class="iw_table_row">
+									<td class="iw_attribute_name">Address:</td>
+									<td id="iw-address"></td>
+								</tr>
+								<tr id="iw-phone-row" class="iw_table_row">
+									<td class="iw_attribute_name">Telephone:</td>
+									<td id="iw-phone"></td>
+								</tr>
+								<tr id="iw-rating-row" class="iw_table_row">
+									<td class="iw_attribute_name">Rating:</td>
+									<td id="iw-rating"></td>
+								</tr>
+								<tr id="iw-website-row" class="iw_table_row">
+									<td class="iw_attribute_name">Website:</td>
+									<td id="iw-website"></td>
+								</tr>
+							</table>
+						</div>
+					</div>
+		</section>
 
-            <div style="display: none">
-                <div id="info-content">
-                    <table>
-                        <tr id="iw-url-row" class="iw_table_row">
-                            <td id="iw-icon" class="iw_table_icon"></td>
-                            <td id="iw-url"></td>
-                        </tr>
-                        <tr id="iw-address-row" class="iw_table_row">
-                            <td class="iw_attribute_name">Address:</td>
-                            <td id="iw-address"></td>
-                        </tr>
-                        <tr id="iw-phone-row" class="iw_table_row">
-                            <td class="iw_attribute_name">Telephone:</td>
-                            <td id="iw-phone"></td>
-                        </tr>
-                        <tr id="iw-rating-row" class="iw_table_row">
-                            <td class="iw_attribute_name">Rating:</td>
-                            <td id="iw-rating"></td>
-                        </tr>
-                        <tr id="iw-website-row" class="iw_table_row">
-                            <td class="iw_attribute_name">Website:</td>
-                            <td id="iw-website"></td>
-                        </tr>
-                    </table>
-                </div>
-            </div>
-        </section>
+		<!--RESULTS-->
 
-        <!--RESULTS-->
+		<section class="row">
+			<hr class="hr2" id="hr">
+			<div class="col-12">
+				<h3 id="results-heading" class="header"></h3>
+				<div id="listing">
+					<table id="resultsTable">
+						<tbody id="results"></tbody>
+					</table>
+				</div>
+			</div>
+		</section>
 
-        <section class="row">
-            <hr class="hr2" id="hr">
-            <div class="col-12">
-                <h3 id="results-heading" class="header"></h3>
-                <div id="listing">
-                    <table id="resultsTable">
-                        <tbody id="results"></tbody>
-                    </table>
-                </div>
-            </div>
-        </section>
+	</section>
 
-    </section>
+	<!--FOOTER-->
+	<!--Taken from tutorial project from Code Institue lessons-->
 
-    <!--FOOTER-->
-    <!--Taken from tutorial project from Code Institue lessons-->
-    <footer class="container-fluid">
+	<footer class="container-fluid">
 		<div class="footer-section row" id="footer-info">
 			<div class="col-md-6">
 				<h5 class="uppercase footer-header">About Us</h5>
-				<p class="inline-block footer-text">At Nordic Discovery we aim to make visiting our part of the world as simple as possible!</p>
+				<p class="inline-block footer-text">At Nordic Discovery we aim to make visiting our part of the world as
+					simple as possible!</p>
 			</div>
 			<div class="col-md-6">
 				<h5 class="uppercase footer-header">Follow us on Social Media</h5>
@@ -167,17 +175,28 @@
 	</footer>
 
 
-    <!--JQuery, Popper.js & Bootstrap JS-->
+	<!--JQuery, Popper.js & Bootstrap JS-->
 
-    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
-	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+	<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+		integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous">
+	</script>
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+		integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
+	</script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+		integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous">
+	</script>
 
 	<!--Google Maps API-->
 
-	<script src="https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/markerclusterer.js"></script>
-	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC76YhO7Nt45nauiHx7JRkA40dybJNq7tg&libraries=places&callback=initMap" async defer></script>
+	<script
+		src="https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/markerclusterer.js">
+	</script>
+	<script
+		src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC76YhO7Nt45nauiHx7JRkA40dybJNq7tg&libraries=places&callback=initMap"
+		async defer></script>
 	<script src="assets/js/maps.js"></script>
-    
+
 </body>
+
 </html>

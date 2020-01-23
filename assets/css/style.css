@@ -1,5 +1,5 @@
 /*-----------------------FONT */
-/*-----------------------FONT */
+
 @import url('https://fonts.googleapis.com/css?family=Skranji:100,200,300,400,500,600,700|Josefin+Sans&display=swap:100,200,300,400,500,600,700');
 
 /*-----------------------SPECIAL MARGINS/HEADINGS/TEXT */
@@ -31,7 +31,7 @@ body {
 }
 
 .lead {
-    font-size: 1rem;
+    font-size: 1.3rem;
     text-align: center;
 }
 
@@ -113,18 +113,18 @@ body {
 }
 
 .btn:hover, .btn-primary:active {
-    background-color: #FCA311 !important;
-    color: #FFFFFF !important;
-    border: transparent !important;
-    transition: color 0.5s ease-in-out !important;
-    -moz-transition: color 0.5s ease-in-out !important;
-    -webkit-transition: color 0.5s ease-in-out !important;
-    -o-transition: color 0.5s ease-in-out !important;
+    background-color: #FCA311;
+    color: #FFFFFF;
+    border: transparent;
+    transition: color 0.5s ease-in-out;
+    -moz-transition: color 0.5s ease-in-out;
+    -webkit-transition: color 0.5s ease-in-out;
+    -o-transition: color 0.5s ease-in-out;
 }
 
 .btn:focus, .btn:active {
-  outline: none !important;
-  box-shadow: none !important; 
+  outline: none;
+  box-shadow: none; 
 }
 
 /*-----------------------MAP */
@@ -136,11 +136,22 @@ body {
     background-color: #14213D;
 }
 
+/*-----------------------RESULTS */
+
+table {
+    font-size: 1.3rem;
+    width: 100%;
+}
+
+#listing {
+    margin-left: 50px;
+    margin-right: 50px;
+}
 
 /*-----------------------FOOTER */
 
 footer {
-    margin: 0;
+    margin-top: 20px;
     background-color: #FCA311;
     color: #FFFFFF;
 }
