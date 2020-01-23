@@ -189,6 +189,22 @@ table {
     font-size: 2.5rem;
 }
 
+/*-----------------------TESTIMONIALS */
+
+.reviewer-image {
+    border: 25px solid transparent;
+    margin-bottom: 30px;
+    width: 100%;
+    height: auto;
+}
+
+.testimonial-hover:hover {
+    background-color: #FF5D73;
+    transition: background-color 0.8s ease-in-out;
+    -moz-transition: background-color 0.8s ease-in-out;
+    -webkit-transition: background-color 0.8s ease-in-out;
+    -o-transition: background-color 0.8s ease-in-out;
+}
 
 /*-----------------------FOOTER */
 

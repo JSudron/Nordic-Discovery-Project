@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+	<!--Bootstrap & CSS stylesheet links-->
+
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
+		type="text/css" />
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+		type="text/css" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.3.1/css/hover-min.css"
+		type="text/css" />
+	<link rel="stylesheet" href="assets/css/style.css">
+
+	<!--Jsdeliver script for contact form-->
+
+	<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2.4.1/dist/email.min.js"></script>
+	<script type="text/javascript">
+		(function(){
+            emailjs.init("user_0kg3KNjk39fsLR9fKlIoP");
+        })();
+	</script>
+
+	<title>Nordic Discovery</title>
+</head>
+
+<body>
+
+	<!---NAVBAR-->
+	<!--Taken from tutorial project from Code Institue lessons-->
+
+	<div id="myNav" class="overlay">
+		<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+		<div class="overlay-content">
+			<a href="index.html">Home</a>
+			<a href="contact.html">Contact</a>
+			<a href="testimonials.html">Testimonials</a>
+		</div>
+	</div>
+
+	<header class="container-fluid navbar-section">
+		<nav class="navbar navbar-expand-md fixed-top">
+			<div class="container-fluid">
+				<a class="navbar-brand navbar-links mx-auto" onclick="openNav()">Nordic Discovery</a>
+			</div>
+			</div>
+		</nav>
+	</header>
+
+	<!--TESTIMONIALS-->
+
+	<div class="container-fluid text-center">
+		<h3 class="contact-heading uppercase">Testimonials</h3>
+		<br>
+		<div class="row">
+			<div class="col-sm-6 col-md-4 col-lg-3 mx-auto">
+				<br>
+				<h5 class="label">Jonny</h5>
+				<a href="#jonny-info" data-toggle="collapse">
+					<img src="assets/images/jonny1.jpg" alt="Jonny Kennedy" class="rounded-circle testimonial-hover reviewer-image"></a>
+					<div class="collapse" id="jonny-info">
+						<p class="small-text">DJ Jonny Kennedy - Founder of Contact</p>
+						<p class="small-text">Style: House & Disco</p>
+					</div>
+			</div>
+			<div class="col-sm-6 col-md-4 col-lg-3 mx-auto">
+				<br>
+				<h5 class="label">Finn</h5>
+				<a href="#finn-info" data-toggle="collapse">
+					<img src="assets/images/finn2.jpg" alt="Finn Munro" class="rounded-circle testimonial-hover reviewer-image"></a>
+					<div class="collapse" id="finn-info">
+						<p class="small-text">DJ Finnbar - Joined 2016</p>
+					</div>
+			</div>
+			<div class="col-sm-6 col-md-4 col-lg-3 mx-auto">
+				<br>
+				<h5 class="label">Craig</h5>
+				<a href="#craig-info" data-toggle="collapse">
+					<img src="assets/images/craig.jpg" alt="Craig Stevenson" class="rounded-circle testimonial-hover reviewer-image"></a>
+					<div class="collapse" id="craig-info">
+						<p class="small-text">DJ Creggles - Joined 2017</p>
+						<p class="small-text">Style: House & Electro</p>
+					</div>
+			</div>
+		</div>
+
+
+		<!--FOOTER-->
+		<!--Taken from tutorial project from Code Institue lessons-->
+
+		<footer class="container-fluid">
+			<div class="footer-section row" id="footer-info">
+				<div class="col-md-6">
+					<h5 class="uppercase footer-header">About Us</h5>
+					<p class="inline-block footer-text">At Nordic Discovery we aim to make visiting our part of the
+						world as
+						simple as possible!</p>
+				</div>
+				<div class="col-md-6">
+					<h5 class="uppercase footer-header" id="social-media">Follow us on Social Media</h5>
+					<ul class="list-inline social-links icon-border">
+						<li class="list-inline-item">
+							<a target="_blank" href="https://www.facebook.com/JoeSudronYeah">
+								<i class="fa fa-facebook" aria-hidden="true"></i>
+								<span class="sr-only">Facebook</span>
+							</a>
+						</li>
+						<li class="list-inline-item">
+							<a target="_blank" href="www.linkedin.com/in/joe-sudron">
+								<i class="fa fa-instagram" aria-hidden="true"></i>
+								<span class="sr-only">Instagram</span>
+							</a>
+						</li>
+						<li class="list-inline-item">
+							<a target="_blank" href="www.linkedin.com/in/joe-sudron">
+								<i class="fa fa-linkedin" aria-hidden="true"></i>
+								<span class="sr-only">LinkedIn</span>
+							</a>
+						</li>
+						<li class="list-inline-item">
+							<a target="_blank" href="https://www.pinterest.co.uk/joesudron/">
+								<i class="fa fa-pinterest" aria-hidden="true"></i>
+								<span class="sr-only">Pinterest</span>
+							</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</footer>
+
+		<!--JQuery, Popper.js & Bootstrap JS-->
+
+		<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+			integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous">
+		</script>
+		<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+			integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
+		</script>
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+			integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous">
+		</script>
+		<script src="assets/js/menu.js"></script>
+		<script src="assets/js/sendEmail.js"></script>
+
+</body>
+
+</html>
