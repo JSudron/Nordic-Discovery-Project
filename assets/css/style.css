@@ -12,8 +12,7 @@ body {
 
 .navbar .navbar-brand {
     font-family: 'Skranji', cursive;
-    font-size: 2rem;
-    color: #FFFFFF;
+    font-size: 2.4rem;
 }
 
 .nav-link {
@@ -24,6 +23,7 @@ body {
 
 .section-heading {
     margin-bottom: 20px;
+    margin-top: 15px;
     font-family: 'Skranji', cursive;
     font-weight: 300;
     font-size: 1.7rem;
@@ -39,32 +39,16 @@ body {
 
 .navbar {
     background-color: #FCA311;
+    color: #FFFFFF;
     position: fixed;
     margin-bottom: 0;
     width: 100vw;
     border: 0;
-    z-index: 100;
+    z-index: 1;
+    cursor:pointer
 }
 
-.navbar .navbar-toggler {
-    border: 0;
-}
-
-.navbar-toggler-icon {
-    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,255,255, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
-}
-
-.navbar-toggler-icon:active {
-    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(20,33,61, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
-}
-
-.navbar-links {
-    color: #FFFFFF;
-    text-decoration: none;
-    text-align: center;
-}
-
-.navbar-links:hover {
+.navbar:hover {
     color: #14213D;
     text-decoration: none;
     transition: color 0.5s ease-in-out;
@@ -72,6 +56,57 @@ body {
     -webkit-transition: color 0.5s ease-in-out;
     -o-transition: color 0.5s ease-in-out;
 }
+
+.overlay {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 2;
+    top: 0;
+    left: 0;
+    background-color: #14213D;
+    opacity: 0.9;
+    overflow-x: hidden;
+    transition: 0.5s;
+}
+
+.overlay-content {
+    position: relative;
+    top: 25%;
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.overlay a {
+    padding: 8px;
+    text-decoration: none;
+    font-size: 36px;
+    color: #E5E5E5;
+    display: block;
+    transition: 0.3s;
+}
+
+.overlay a:hover, .overlay a:focus {
+    color: #FCA311;
+}
+
+.overlay .closebtn {
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 60px;
+}
+
+@media screen and (max-height: 450px) {
+    .overlay a {font-size: 20px}
+    .overlay .closebtn {
+    font-size: 40px;
+    top: 15px;
+    right: 35px;
+    }
+}
+
 /*-----------------------SEARCH FILTERS */
 
 #category {

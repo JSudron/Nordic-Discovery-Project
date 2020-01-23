@@ -22,23 +22,21 @@
 <body>
 
 	<!---NAVBAR-->
+    <!--Taken from tutorial project from Code Institue lessons-->
+
+    <div id="myNav" class="overlay">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <div class="overlay-content">
+            <a href="index.html">Home</a>
+            <a href="contact.html">Contact</a>
+            <a href="testemonials.html">Testemonials Page</a>
+        </div>
+    </div>
 
 	<header class="container-fluid navbar-section">
 		<nav class="navbar navbar-expand-md fixed-top">
 			<div class="container-fluid">
-				<a class="navbar-brand navbar-links" href="index.html">Nordic Discovery</a>
-				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-small"> <!--Navbar collapses on mobile devices-->
-                    <span class="navbar-toggler-icon "></span>
-                </button>
-				<div class="collapse navbar-collapse" id="navbar-small">
-					<ul class="navbar-nav nav">
-						<li class="nav-item">
-							<a class="nav-link active" href="index.html">Home</a>
-						</li>
-						<li class="nav-item">
-							<a class="nav-link active" href="#">Contact</a>
-						</li>
-					</ul>
+				<a class="navbar-brand navbar-links mx-auto" onclick="openNav()">Nordic   Discovery</a>
 				</div>
 			</div>
 		</nav>
@@ -143,7 +141,7 @@
 					simple as possible!</p>
 			</div>
 			<div class="col-md-6">
-				<h5 class="uppercase footer-header">Follow us on Social Media</h5>
+				<h5 class="uppercase footer-header" id="social-media">Follow us on Social Media</h5>
 				<ul class="list-inline social-links icon-border">
 					<li class="list-inline-item">
 						<a target="_blank" href="https://www.facebook.com/JoeSudronYeah">
@@ -174,27 +172,17 @@
 		</div>
 	</footer>
 
-
 	<!--JQuery, Popper.js & Bootstrap JS-->
 
-	<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
-		integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous">
-	</script>
-	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-		integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
-	</script>
-	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
-		integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous">
-	</script>
+	<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <script src="assets/js/menu.js"></script>
 
 	<!--Google Maps API-->
 
-	<script
-		src="https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/markerclusterer.js">
-	</script>
-	<script
-		src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC76YhO7Nt45nauiHx7JRkA40dybJNq7tg&libraries=places&callback=initMap"
-		async defer></script>
+	<script src="https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/markerclusterer.js"></script>
+	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC76YhO7Nt45nauiHx7JRkA40dybJNq7tg&libraries=places&callback=initMap" async defer></script>    
 	<script src="assets/js/maps.js"></script>
 
 </body>
