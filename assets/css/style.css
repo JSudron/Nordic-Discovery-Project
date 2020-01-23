@@ -191,6 +191,11 @@ table {
 
 /*-----------------------TESTIMONIALS */
 
+.testimonial-container {
+    padding-left: 0;
+    padding-right: 0;
+}
+
 .reviewer-image {
     border: 25px solid transparent;
     margin-bottom: 30px;
@@ -199,7 +204,7 @@ table {
 }
 
 .testimonial-hover:hover {
-    background-color: #FF5D73;
+    background-color: #FCA311;
     transition: background-color 0.8s ease-in-out;
     -moz-transition: background-color 0.8s ease-in-out;
     -webkit-transition: background-color 0.8s ease-in-out;
