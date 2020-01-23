@@ -121,6 +121,12 @@ body {
 
 /*-----------------------SEARCH FILTERS */
 
+@media (min-width: 992px) {
+    .lead-large {
+    margin-top: 150px;
+    }
+}
+
 #category {
     width: 100%;
     height: 40px;
