@@ -207,6 +207,14 @@ table {
     margin-right: 50px;
 }
 
+#results {
+    color: #FFFFFF;
+}
+
+#results-heading {
+    color: #FAED26;
+}
+
 /*-----------------------CONTACT */
 
 .fa-envelope {
