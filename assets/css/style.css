@@ -1,30 +1,37 @@
 /*-----------------------FONT */
 
-@import url('https://fonts.googleapis.com/css?family=Skranji:100,200,300,400,500,600,700|Josefin+Sans&display=swap:100,200,300,400,500,600,700');
+@import url('https://fonts.googleapis.com/css?family=Fjalla+One:100,200,300,400,500,600,700|Josefin+Sans&display=swap:100,200,300,400,500,600,700');
 
 /*-----------------------SPECIAL MARGINS/HEADINGS/TEXT */
 
 body {
     padding-top: 90px;
-    font-family: 'Josefin Sans', sans-serif;
-    color: #14213D;
+    font-family: 'Fjalla One', sans-serif;
+    background-image: url(https://e6bc0310-fcf6-4743-ae1b-9157e72fe8ec.ws-eu01.gitpod.io/files/download/?id=a995746c-be04-4efb-8057-80ade76dedde);
+    color: #FAED26;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
 }
 
 .navbar .navbar-brand {
-    font-family: 'Skranji', cursive;
-    font-size: 2.4rem;
+    font-size: 2.8rem;
+}
+
+@media (min-width: 768px) {
+    .navbar .navbar-brand {
+        font-size: 4rem;
+    }
 }
 
 .nav-link {
-    font-family: 'Josefin Sans', sans-serif;
     font-size: 1.2rem;
-    color: #FFFFFF;
+    color: #FAED26;
 }
 
 .section-heading, .contact-heading {
     margin-bottom: 15px;
     margin-top: 15px;
-    font-family: 'Skranji', cursive;
     font-weight: 300;
     font-size: 1.7rem;
     text-align: center;
@@ -33,24 +40,24 @@ body {
 .lead {
     font-size: 1.3rem;
     text-align: center;
+    color: #FFFFFF;
 }
 
 .iw_table_row {
     font-size: 0.6rem;
-    font-family: 'Josefin Sans', sans-serif;
+    font-family: 'Fjalla One', sans-serif;
 }
 
 @media (min-width: 768px) {
     .iw_table_row {
-    font-family: 'Josefin Sans', sans-serif;
+    font-family: 'Fjalla One', sans-serif;
     font-size: 1rem;
     }
 }
-
 /*-----------------------NAVBAR */
 
 .navbar {
-    background-color: #FCA311;
+    background: transparent;
     color: #FFFFFF;
     position: fixed;
     margin-bottom: 0;
@@ -186,7 +193,10 @@ body {
     margin-bottom: 20px;
     width: 100%;
     height: 70vh;
-    background-color: #14213D;
+    background: transparent;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
 }
 
 /*-----------------------RESULTS */
@@ -199,6 +209,10 @@ table {
 #listing {
     margin-left: 50px;
     margin-right: 50px;
+}
+
+.resultsTable {
+    background: transparent;
 }
 
 /*-----------------------CONTACT */
@@ -233,7 +247,7 @@ table {
 
 footer {
     margin-top: 20px;
-    background-color: #FCA311;
+    background: transparent;
     color: #FFFFFF;
 }
 

@@ -109,7 +109,7 @@ function initMap() {
                 "elementType": "all",
                 "stylers": [
                     {
-                        "color": "#14213D"
+                        "color": "#09191D"
                     },
                     {
                         "visibility": "on"
@@ -341,10 +341,10 @@ function addResult(result, i) {
     var markerIcon = MARKER_PATH + markerLetter + '.png';
 
 
-    // Creates striped effect on the text background in results table
+    // Make background transparent in results table
 
     var tr = document.createElement('tr');
-    tr.style.backgroundColor = (i % 2 === 0 ? '#E5E5E5' : '#FFFFFF');
+    tr.style.background = ('transparent');
     tr.onclick = function () {
         google.maps.event.trigger(markers[i], 'click');
 
