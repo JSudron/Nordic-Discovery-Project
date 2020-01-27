@@ -71,7 +71,15 @@ The dark blue compliments the background image used but also contrasts against t
 background. The colours are clean & simple much like Scandinavian design whilst also mimicking the beautiful starry nights the area
 is well known for. 
 
-#### Font
+#### Fonts
+
+- Fjalla One
+- Josefin Sans
+
+Both fonts were found on the site [Google-Fonts] (https://fonts.google.com/). They were chosen due to the simple & clean look they have,
+which compliments the colour scheme. Josefin Sans was used for the majority of the body text whereas the Fjalla One  was used for the heading 
+to give it extra pop. It was also designed by a Swede to further enhance the nordic style design.
+
 
 ### Scope 
 

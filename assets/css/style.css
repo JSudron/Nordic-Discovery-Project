@@ -6,7 +6,7 @@
 
 body {
     padding-top: 90px;
-    font-family: 'Fjalla One', sans-serif;
+    font-family: 'Josefin Sans', sans-serif;
     background-image: url(https://github.com/JSudron/Nordic-Discover-Project/blob/master/assets/images/background-xlarge.jpg?raw=true);
     color: #09191D;
     background-repeat: no-repeat;
@@ -15,7 +15,7 @@ body {
 }
 
 .navbar .navbar-brand {
-    font-family: 'Josefin+sans', sans-serif;
+    font-family: 'Fjalla One', sans-serif;
     font-size: 2.8rem;
     margin-bottom: 25px;
 }
