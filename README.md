@@ -19,6 +19,7 @@ To allow users to find a variety of accomodation/attractions within any location
 
 #### Target audience
 
+- Users whom speak English as currently this is the only language catered for.
 - Holidaymakers of all ages looking for potential holiday destinations.
 - Holidaymakers whom have already have a holiday booked to Scandinavia or Iceland.
 - Students between 18 & 28 looking for somewhere to go on a gap year.
@@ -84,19 +85,61 @@ to give it extra pop. It was also designed by a Swede to further enhance the nor
 
 ## Features/Functionality
 
-### Exisiting Features
+### Elements present on each page
 
-#### Elements present on each page
+#### Navigation Bar 
 
-- Navigation Bar - The Navbar-brand is used as a way to access the pop-up overlay menu which slides in from the left.
-                 - Due to the size of the pages the navbar is not fixed.
+- The Navbar-brand is used as a way to access the pop-up overlay menu which slides in from the left.
+- Due to the size of the pages the navbar is not fixed. Allows for easy navigation of the site.
 
-- Footer - Fixed to the bottom of the page this gives a brief description on how to use the site & links to the relevant social media sites.
-         - For now generic social media sites are used.
+#### Footer 
 
-#### Other elements
+- Fixed to the bottom of the page this gives a brief description on how to use the site.
+- Provides links to the relevant social media sites. 
+- For now generic social media sites are used.
+
+#### Background Image 
+
+- A background image is used as the background on each page. 
+- The navbar & footer given transparent properties to allow for a fullscreen image.
+
+### Other elements
+
+#### Contact Form 
+
+- A modal contact form is used on the contacts page.
+- Utilises [E-mail JS](https://www.emailjs.com/) javascript to allow e-mailintegration to the desired e-mail address. 
+- Allows users to easily get in touch with the travel company.
+
+#### Testimonials Section 
+
+- Has images of three users who've given glowing reviews. 
+- The images can be clicked to reveal the testimonial.
 
 ### Features left to implement
+
+#### Country Search Filters
+
+- Dependent on user feedback a search filter for each country can be added to the search filter.
+
+#### FAQ Section
+
+- Will replace the about element shown in the footer. 
+- Give further instructions into how to use site & other information users may need.
+
+#### Flight Search 
+
+- Allow users to search for flights to the selected destination.
+- Will then link to the chosen flight provider. 
+
+#### Featured Accomodation/Attraction
+
+- Showcase a different venue each week/month.
+- Provide detailed information on the venue along with user testimonials.
+
+#### Further Languages
+
+- Add a language choice option to cater to users from various countries.
 
 ## Technologies used
 
@@ -117,9 +160,9 @@ to give it extra pop. It was also designed by a Swede to further enhance the nor
 
 - Github/Gitpod - Used to create & deploy website.
 - Google Maps API - Javascript functionality.
-- E-mail JS - Javascript functionality.
-- Balsamiq 3 Mockups.
-- Google Chrome Dev Tools. 
+- [E-mail JS](https://www.emailjs.com/) - Javascript functionality.
+- Balsamiq 3 Mockups
+- Google Chrome Dev Tools 
 
 ## Testing
 
