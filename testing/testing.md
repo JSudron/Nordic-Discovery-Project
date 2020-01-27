@@ -38,3 +38,12 @@
 - Used to validate the Javascript. No errors were found.
 
 ## Manual Tests
+
+- The live web address was tested on a variety of web browsers: Chrome/Safari/Opera/Explorer.
+- Each link on the site was tested to ensure it linked to the correct place.
+- Attempted to search for Copenghagen within the search filters, which came up with the autocomplete.
+- Each type of attraction was then tested with each showing the correct locations.
+- The info window was then tested to ensure the correct info was shown.
+- The Google maps API was also continuously checked in the console of the dev tools whilst testing the website.
+- Contact form was checked with each section filled out correctly to ensure the e-mail sent correctly.
+- Contact form was then partially filled in to ensure an error was shown if a box wasn't filled in correctly.
