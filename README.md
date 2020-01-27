@@ -166,6 +166,8 @@ to give it extra pop. It was also designed by a Swede to further enhance the nor
 
 ## Testing
 
+- [Click Here](https://github.com/JSudron/Nordic-Discover-Project/blob/master/testing/testing.md)
+
 ## Deployment
 
 ### Hosting on GitHub
