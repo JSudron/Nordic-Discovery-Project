@@ -38,20 +38,38 @@ To allow users to find a variety of accomodation/attractions within any location
 - Enable users to easily find a variety of accomodation/attractions within their desired location.
 - Help to increase turnover at attractions so they'll actively advertise Nordic Discovery, e.g. via their own website.
 - In the future to drive revenue via sponsorship & advertising from searched locations & accomodation/attractions.
+- Allow users & accomodation/attractions to contact the site should they have any enquiries.
+- Showcase user testimonials to enhance the legitimacy of the website.
 
 #### UX designer
 
 - Track user behaviour to continue to enhance the user experience.
 - Provide a website which is attractive, yet can easily be modified as per the travel companies request.
 - Ensure the functionality of the website provides the results required by the user.
+- Provide a means for the user to contact the travel company.
 
-#### User/Customer
+#### Users & Customers(accomodation/attractions)
 
-- Find a variety of accomodation/attractions
+- Find a variety of accomodation/attractions within a desired location on one website.
+- Be able to easily contact the travel company for any issues or enquiries.
+- Be provided with the contact details for any accomodation/attractions searched for.
+- Find accomodation/attractions that may not have found without directly knowing the name of the place looking for.
+- Customers will be looking to increase the number of visitors.
+- The towns & cities will look to increase tourist numbers which will drive revenue in the area.
+- Users may find accomodation/attractions which would ordinarily only be found further down Google searches.
 
 ### Design
 
 #### Colours
+
+- #FAED26 Yellow
+- #FFFFFF White
+- #09191D Dark Blue
+
+The website [Coolors] (https://coolors.co/) was used to find an attractive colour scheme which compliments Scandinavia & Iceland.
+The dark blue compliments the background image used but also contrasts against the white & yellow which helps the text to pop out against the
+background. The colours are clean & simple much like Scandinavian design whilst also mimicking the beautiful starry nights the area
+is well known for. 
 
 #### Font
 
