@@ -66,7 +66,7 @@ To allow users to find a variety of accomodation/attractions within any location
 - #FFFFFF White
 - #09191D Dark Blue
 
-The website [Coolors] (https://coolors.co/) was used to find an attractive colour scheme which compliments Scandinavia & Iceland.
+The website [Coolors](https://coolors.co/) was used to find an attractive colour scheme which compliments Scandinavia & Iceland.
 The dark blue compliments the background image used but also contrasts against the white & yellow which helps the text to pop out against the
 background. The colours are clean & simple much like Scandinavian design whilst also mimicking the beautiful starry nights the area
 is well known for. 
@@ -76,21 +76,11 @@ is well known for.
 - Fjalla One
 - Josefin Sans
 
-Both fonts were found on the site [Google-Fonts] (https://fonts.google.com/). They were chosen due to the simple & clean look they have,
+Both fonts were found on the site [Google Fonts](https://fonts.google.com/). They were chosen due to the simple & clean look they have,
 which compliments the colour scheme. Josefin Sans was used for the majority of the body text whereas the Fjalla One  was used for the heading 
 to give it extra pop. It was also designed by a Swede to further enhance the nordic style design.
 
-
-### Scope 
-
-Contact Aberdeen has run club nights before with DJ Jonny Kennedy heading these up. However, having been out of the scene for some time we wanted
-to give club owners a glimpse into what Contact club nights are all about. We also wanted to use the site as a platform for DJs to get in touch
-should they want to perform at a Contact club night. Therefore providing an easy means of contact on the site was a must.
-
 ### Wireframes
-
-- Wireframe - Home & About Sections [Wireframe](https://github.com/JSudron/Contact-Aberdeen/blob/master/assets/wireframes/Wireframes-part%201.jpg)
-- Wireframe - Gallery, Bookings & Location Sections [Wireframe](https://github.com/JSudron/Contact-Aberdeen/blob/master/assets/wireframes/Wireframes-part%202.jpg)
 
 ## Features/Functionality
 
@@ -106,14 +96,23 @@ should they want to perform at a Contact club night. Therefore providing an easy
 
 ### Languages
 
-1. HTML
-2. CSS
-3. Bootstrap (4.3.1)
-4. JavaScript
+- HTML
+- CSS
+- JavaScript
 
 ### Libraries
 
+- Bootstrap
+- JQuery & Popper
+- FontAwesome
+- Google Fonts
+
 ### Tools
+
+- Google Maps API - Javascript functionality
+- E-mail JS - Javascript functionality
+- Balsamiq 3 Mockups
+- Google Chrome Dev Tools 
 
 ## Testing
 
@@ -127,38 +126,52 @@ should they want to perform at a Contact club night. Therefore providing an easy
 
 ### Content
 
-All content in the 'About' section was written by myself.
+All original content.
 
 ### Media
 
+#### Images
+
+- Background image from [Pexels](https://www.pexels.com/photo/photo-of-starry-night-1421903/).
+
+#### Fonts
+
+- Fonts from [Google Fonts](https://fonts.google.com/).
+
 ### Acknowledgements
 
-Parts of code were learnt from various sites, which was then amended by myself to obtain the look & feel I was after. 
+#### Inspiration
 
-- Navbar Section -
-Code learnt from navbar tutorials at [Mdbootstrap](https://mdbootstrap.com/docs/jquery/navigation/hamburger-menu/) & Code Institute tutorials).
-Also took the navbar collapse JavaScript code from [Stackoverflow](https://stackoverflow.com/questions/42401606/how-to-hide-collapsible-bootstrap-4-navbar-on-click).
+- Parts of code were learnt from various sites, which was then amended by myself to obtain the look & feel I was after.
+- The [Student Projects](https://codeinstitute.net/student-projects/) section on the Code Institute site was used to look for inspiration. 
+- Primarily the [Ben Hasselgren](https://benhasselgren.github.io/ifd-milestone-project-pages/) project was used as a base idea for the website.
+- [Awwwards]https://www.awwwards.com/) was used to look at a variety of sites for design inspiration.
+- Colour scheme from [Coolors](https://coolors.co/).
 
-- Header section -
-Code learnt from Code Institute tutorials & 'HTML & CSS design and build websites' by Jon Duckett.
+#### Navbar 
 
-- About section - 
-Code learnt from Code Institute tutorials and [W3schools](https://www.w3schools.com/bootstrap/bootstrap_theme_band.asp).
+- Code learnt from Code Institute tutorials.   
+- The slide menu pop-up overlay was learnt from [W3schools](https://www.w3schools.com/howto/howto_js_fullscreen_overlay.asp).
 
-- Gallery section -
-Code learnt from carousel tutorials at [GetBootstrap](https://getbootstrap.com/docs/4.0/components/carousel/).
+#### Search Filters
 
-- Music section -
-Code learnt from [Stackoverflow](https://stackoverflow.com/questions/23737427/how-to-put-two-iframes-side-by-side).
+- Code learnt from Code Institute tutorials. 
+- Code adapted up from [Stack Overflow](https://stackoverflow.com/).
+- Code adapted up from [Get Bootstrap](https://getbootstrap.com/).
 
-- Bookings section -
-Code learnt from Code Institute tutorials.
+#### Map - Javascript
 
-- Location section -
-Code learnt from Slack
+- Predominantly code taken from [Google Maps](https://developers-dot-devsite-v2-prod.appspot.com/maps/documentation/javascript/examples/places-autocomplete-hotelsearch).
+- Map style adapted from [Snazzy Maps](https://snazzymaps.com/style/25/blue-water).
 
-- Footer section - 
-Code learnt from Code Institute tutorials.
+#### Results
+
+- Code learnt from Code Institute tutorials.
+- Code adapted up from [Stack Overflow](https://stackoverflow.com/).
+
+#### Footer
+
+- Code learnt from Code Institute tutorials.
 
 ## Disclaimer
 
