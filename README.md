@@ -218,7 +218,7 @@ All original content.
 #### Navbar 
 
 - Code learnt from Code Institute tutorials.   
-- The slide menu pop-up overlay was learnt from [W3schools](https://www.w3schools.com/howto/howto_js_fullscreen_overlay.asp).
+- The slide menu pop-up overlay javascript was learnt from [W3schools](https://www.w3schools.com/howto/howto_js_fullscreen_overlay.asp).
 
 #### Search Filters
 
@@ -230,7 +230,8 @@ All original content.
 
 - Predominantly code taken from [Google Maps](https://developers-dot-devsite-v2-prod.appspot.com/maps/documentation/javascript/examples/places-autocomplete-hotelsearch).
 - Map style adapted from [Snazzy Maps](https://snazzymaps.com/style/25/blue-water).
-
+- Code adapted up from [Stack Overflow](https://stackoverflow.com/).
+- Code adapted up from [W3schools](https://www.w3schools.com/graphics/google_maps_events.asp)
 #### Results
 
 - Code learnt from Code Institute tutorials.
