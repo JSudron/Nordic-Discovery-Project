@@ -88,6 +88,12 @@ to give it extra pop. It was also designed by a Swede to further enhance the nor
 
 #### Elements present on each page
 
+- Navigation Bar - The Navbar-brand is used as a way to access the pop-up overlay menu which slides in from the left.
+                 - Due to the size of the pages the navbar is not fixed.
+
+- Footer - Fixed to the bottom of the page this gives a brief description on how to use the site & links to the relevant social media sites.
+         - For now generic social media sites are used.
+
 #### Other elements
 
 ### Features left to implement
@@ -109,10 +115,11 @@ to give it extra pop. It was also designed by a Swede to further enhance the nor
 
 ### Tools
 
-- Google Maps API - Javascript functionality
-- E-mail JS - Javascript functionality
-- Balsamiq 3 Mockups
-- Google Chrome Dev Tools 
+- Github/Gitpod - Used to create & deploy website.
+- Google Maps API - Javascript functionality.
+- E-mail JS - Javascript functionality.
+- Balsamiq 3 Mockups.
+- Google Chrome Dev Tools. 
 
 ## Testing
 
@@ -120,7 +127,22 @@ to give it extra pop. It was also designed by a Swede to further enhance the nor
 
 ### Hosting on GitHub
 
+- Log into GitHub.
+- Go to settings and scroll down to GitHub Pages section.
+- Select as a source master branch.
+- The page is now automatically refreshed and the project is deployed.
+- To access the project scroll down again to GitHub Pages section and click on the provided link.
+- Link also at top of this Readme file.
+
 ### How to run this project locally
+
+- Go to [Nordic Discovery](https://github.com/JSudron/Nordic-Discover-Project) repository page.
+- Click on "Clone or download" green button.
+- Copy the URL to the repository.
+- Open the terminal in your local IDE.
+- Choose the working directory where you would like to have the cloned repository.
+- Type git clone, and add the URL you copied from Github: git clone https://github.com/JSudron/Nordic-Discover-Project.git.
+- Press Enter and your local clone will be created.
 
 ## Credits
 
