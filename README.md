@@ -99,7 +99,7 @@ to give it extra pop. It was also designed by a Swede to further enhance the nor
 
 #### Navigation Bar 
 
-- The Navbar-brand is used as a way to access the pop-up overlay menu which slides in from the left.
+- The Navbar-brand is used as a link to access the pop-up overlay menu which slides in from the left.
 - Due to the size of the pages the navbar is not fixed. Allows for easy navigation of the site.
 
 #### Footer 
