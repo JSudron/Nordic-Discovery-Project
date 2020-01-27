@@ -7,7 +7,7 @@ A live demo can be found [here](https://jsudron.github.io/Nordic-Discover-Projec
 ## Introduction
 
 For this project I was tasked with creating an application for a travel company called Nordic Discovery. The application allows users to search for a variety of locations within
-destinations in Scandinavia & Iceland. These include options for accomodation, restaurants, tourist attractions etc. The aim is to give users a one-stop shop in finding the array of options available
+destinations in Scandinavia & Iceland. These include options for accomodation, restaurants, tourist attractions etc. This gives users a one-stop shop in finding the array of options available
 to them in the location selected. Tourism in Scandanavia & Iceland has been steadily increasing over the past few years & this site should help to increase that even further by helping users plan 
 their dream holiday up north. 
 
@@ -15,17 +15,39 @@ their dream holiday up north.
  
 ### Goals
 
+To allow users to find a variety of accomodation/attractions within any location in Denmark, Finland, Iceland, Norway & Sweden.
+
 #### Target audience
 
+- Holidaymakers of all ages looking for potential holiday destinations.
+- Holidaymakers whom have already have a holiday booked to Scandinavia or Iceland.
+- Students between 18 & 28 looking for somewhere to go on a gap year.
+
 #### Customer goals
+
+- Have a fully proficient & intuitive website.
+- Reach a variety of new customers.
+- Gain advertising/sponsorship from accomodation/attractions found on the site.
 
 ### User Stories
 
 #### Travel company
 
+- Have an attractive & fast website which will keep users engaged.
+- Provide a pleasant user experience so users continue to visit the site.
+- Enable users to easily find a variety of accomodation/attractions within their desired location.
+- Help to increase turnover at attractions so they'll actively advertise Nordic Discovery, e.g. via their own website.
+- In the future to drive revenue via sponsorship & advertising from searched locations & accomodation/attractions.
+
 #### UX designer
 
+- Track user behaviour to continue to enhance the user experience.
+- Provide a website which is attractive, yet can easily be modified as per the travel companies request.
+- Ensure the functionality of the website provides the results required by the user.
+
 #### User/Customer
+
+- Find a variety of accomodation/attractions
 
 ### Design
 
