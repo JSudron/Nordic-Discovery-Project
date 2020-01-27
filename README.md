@@ -83,6 +83,16 @@ to give it extra pop. It was also designed by a Swede to further enhance the nor
 
 ### Wireframes
 
+- All Wireframes were created using Balsamiq 3 software.
+
+- [Home Page](https://github.com/JSudron/Nordic-Discover-Project/blob/448b582292310e70b23b2a942f9cd71ac7bc9ae5/assets/mockups/Home%20Page.png).
+
+- [Menu](https://github.com/JSudron/Nordic-Discover-Project/blob/448b582292310e70b23b2a942f9cd71ac7bc9ae5/assets/mockups/Menu%20Bar.png).
+
+- [Testimonials Page](https://github.com/JSudron/Nordic-Discover-Project/blob/448b582292310e70b23b2a942f9cd71ac7bc9ae5/assets/mockups/Testimonials%20Page.png).
+
+- [Contacts Page](https://github.com/JSudron/Nordic-Discover-Project/blob/448b582292310e70b23b2a942f9cd71ac7bc9ae5/assets/mockups/Contacts%20Page.png).
+
 ## Features/Functionality
 
 ### Elements Present On Each Page
