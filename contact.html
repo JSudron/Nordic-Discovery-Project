@@ -8,14 +8,17 @@
 
 	<!--Bootstrap & CSS stylesheet links-->
 
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" type="text/css" />
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" type="text/css" />
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.3.1/css/hover-min.css" type="text/css" />
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
+		type="text/css" />
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+		type="text/css" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.3.1/css/hover-min.css"
+		type="text/css" />
 	<link rel="stylesheet" href="assets/css/style.css">
 
-    <!--Jsdeliver script for contact form-->
+	<!--Jsdeliver script for contact form-->
 
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2.4.1/dist/email.min.js"></script>
+	<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2.4.1/dist/email.min.js"></script>
 	<script type="text/javascript">
 		(function(){
             emailjs.init("user_0kg3KNjk39fsLR9fKlIoP");
@@ -28,53 +31,54 @@
 <body>
 
 	<!---NAVBAR-->
-    <!--Taken from tutorial project from Code Institue lessons-->
+	<!--Taken from tutorial project from Code Institue lessons-->
 
-    <div id="myNav" class="overlay">
-        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-        <div class="overlay-content">
-            <a href="index.html">Home</a>
-            <a href="contact.html">Contact</a>
-            <a href="testimonials.html">Testimonials</a>
-        </div>
-    </div>
+	<div id="myNav" class="overlay">
+		<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+		<div class="overlay-content">
+			<a href="index.html">Home</a>
+			<a href="contact.html">Contact</a>
+			<a href="testimonials.html">Testimonials</a>
+		</div>
+	</div>
 
 	<header class="container-fluid navbar-section">
 		<nav class="navbar navbar-expand-md fixed-top">
 			<div class="container-fluid">
 				<a class="navbar-brand navbar-links mx-auto" onclick="openNav()">Nordic Discovery</a>
-				</div>
+			</div>
 			</div>
 		</nav>
 	</header>
 
-    <!--CONTACT FORM-->
+	<!--CONTACT FORM-->
 
-    <div class="container-fluid text-center bookings-container" id="bookings">
-        <h3 class="contact-heading uppercase">Contact Us</h3>
-        <br>
-        <i class="fa fa-envelope"></i>
-        <div class="line-divider"></div>
-        <br>
-            <h4 class="lead">If you have any issues with our site or would like to have any locations you'd like added to our search
-            <br>please fill in the form below & we'll be in touch</h4>
-            <br>
-        <div class="center-form col-lg-6 mx-auto">
-            <form onsubmit="return sendMail(this);">
-                <input type="text" name="name" id="fullname" class="form-control" placeholder="Name" required/><br>
-                <input type="email" name="emailaddress" id="emailaddress" class="form-control" placeholder="E-mail" required/><br>
-                <textarea rows="6" name="query" id="query" class="form-control" placeholder="Query" required></textarea><br>
-                <div class="form-row text-center">
-                    <div class="col">
-                        <button id="submit-button" type="submit" class="btn btn-primary">Submit</button>
-                    </div>
-                </div>
-            </form>
-        </div>
-    </div>
+	<div class="container-fluid text-center bookings-container" id="bookings">
+		<h3 class="contact-heading uppercase">Contact Us</h3>
+		<br>
+		<i class="fa fa-envelope"></i>
+		<div class="line-divider"></div>
+		<br>
+		<h4 class="lead">If you have any issues with our site or would like to have any locations you'd like added to
+			our search
+			<br>please fill in the form below & we'll be in touch</h4>
+			<br>
+			<div class="center-form col-lg-6 mx-auto">
+				<form onsubmit="return sendMail(this);">
+					<input type="text" name="name" id="fullname" class="form-control" placeholder="Name" required/><br>
+					<input type="email" name="emailaddress" id="emailaddress" class="form-control" placeholder="E-mail" required/><br>
+					<textarea rows="6" name="query" id="query" class="form-control" placeholder="Query" required></textarea><br>
+					<div class="form-row text-center">
+						<div class="col">
+							<button id="submit-button" type="submit" class="btn btn-primary">Submit</button>
+						</div>
+					</div>
+				</form>
+			</div>
+	</div>
 
 
-    <!--FOOTER-->
+	<!--FOOTER-->
 	<!--Taken from tutorial project from Code Institue lessons-->
 
 	<footer class="container-fluid">
@@ -82,7 +86,8 @@
 			<div class="col-md-6">
 				<h5 class="uppercase footer-header">About Us</h5>
 				<p class="inline-block footer-text">At Nordic Discovery we aim to make visiting our part of the world as
-					simple as possible! Simply choose where you'd like to go and then what kind of place you are looking for. Click the Nordic Discovery header for the menu.</p>
+					simple as possible! Simply choose where you'd like to go and then what kind of place you are looking
+					for. Click the Nordic Discovery header for the menu.</p>
 			</div>
 			<div class="col-md-6">
 				<h5 class="uppercase footer-header" id="social-media">Follow us on Social Media</h5>
@@ -118,11 +123,17 @@
 
 	<!--JQuery, Popper.js & Bootstrap JS-->
 
-	<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
-	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
-    <script src="assets/js/menu.js"></script>
-    <script src="assets/js/sendEmail.js"></script>    
+	<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+		integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous">
+	</script>
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+		integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
+	</script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+		integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous">
+	</script>
+	<script src="assets/js/menu.js"></script>
+	<script src="assets/js/sendEmail.js"></script>
 
 </body>
 

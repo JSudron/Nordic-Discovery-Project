@@ -4,7 +4,7 @@
 
 A live demo can be found [here](https://jsudron.github.io/Nordic-Discover-Project/).
 
-## Introduction
+## Introduction - Project Purpose
 
 For this project I was tasked with creating an application for a travel company called Nordic Discovery. The application allows users to search for a variety of locations within
 destinations in Scandinavia & Iceland. These include options for accomodation, restaurants, tourist attractions etc. This gives users a one-stop shop in finding the array of options available
@@ -17,14 +17,14 @@ their dream holiday up north.
 
 To allow users to find a variety of accomodation/attractions within any location in Denmark, Finland, Iceland, Norway & Sweden.
 
-#### Target audience
+#### Target Audience
 
 - Users whom speak English as currently this is the only language catered for.
 - Holidaymakers of all ages looking for potential holiday destinations.
 - Holidaymakers whom have already have a holiday booked to Scandinavia or Iceland.
 - Students between 18 & 28 looking for somewhere to go on a gap year.
 
-#### Customer goals
+#### Customer Goals
 
 - Have a fully proficient & intuitive website.
 - Reach a variety of new customers.
@@ -32,7 +32,7 @@ To allow users to find a variety of accomodation/attractions within any location
 
 ### User Stories
 
-#### Travel company
+#### Travel Company
 
 - Have an attractive & fast website which will keep users engaged.
 - Provide a pleasant user experience so users continue to visit the site.
@@ -42,7 +42,7 @@ To allow users to find a variety of accomodation/attractions within any location
 - Allow users & accomodation/attractions to contact the site should they have any enquiries.
 - Showcase user testimonials to enhance the legitimacy of the website.
 
-#### UX designer
+#### UX Designer
 
 - Track user behaviour to continue to enhance the user experience.
 - Provide a website which is attractive, yet can easily be modified as per the travel companies request.
@@ -85,7 +85,7 @@ to give it extra pop. It was also designed by a Swede to further enhance the nor
 
 ## Features/Functionality
 
-### Elements present on each page
+### Elements Present On Each Page
 
 #### Navigation Bar 
 
@@ -103,7 +103,7 @@ to give it extra pop. It was also designed by a Swede to further enhance the nor
 - A background image is used as the background on each page. 
 - The navbar & footer given transparent properties to allow for a fullscreen image.
 
-### Other elements
+### Other Elements
 
 #### Contact Form 
 
@@ -116,7 +116,7 @@ to give it extra pop. It was also designed by a Swede to further enhance the nor
 - Has images of three users who've given glowing reviews. 
 - The images can be clicked to reveal the testimonial.
 
-### Features left to implement
+### Features Left To Implement
 
 #### Country Search Filters
 
@@ -141,7 +141,7 @@ to give it extra pop. It was also designed by a Swede to further enhance the nor
 
 - Add a language choice option to cater to users from various countries.
 
-## Technologies used
+## Technologies Used
 
 ### Languages
 
@@ -170,7 +170,7 @@ to give it extra pop. It was also designed by a Swede to further enhance the nor
 
 ## Deployment
 
-### Hosting on GitHub
+### Hosting On GitHub
 
 - Log into GitHub.
 - Go to settings and scroll down to GitHub Pages section.
@@ -179,7 +179,7 @@ to give it extra pop. It was also designed by a Swede to further enhance the nor
 - To access the project scroll down again to GitHub Pages section and click on the provided link.
 - Link also at top of this Readme file.
 
-### How to run this project locally
+### How To Run This Project Locally
 
 - Go to [Nordic Discovery](https://github.com/JSudron/Nordic-Discover-Project) repository page.
 - Click on "Clone or download" green button.
@@ -200,6 +200,7 @@ All original content.
 #### Images
 
 - Background image from [Pexels](https://www.pexels.com/photo/photo-of-starry-night-1421903/).
+- Testimonial images were taken from Facebook friend whom consented to their use. 
 
 #### Fonts
 
@@ -232,10 +233,20 @@ All original content.
 - Map style adapted from [Snazzy Maps](https://snazzymaps.com/style/25/blue-water).
 - Code adapted up from [Stack Overflow](https://stackoverflow.com/).
 - Code adapted up from [W3schools](https://www.w3schools.com/graphics/google_maps_events.asp)
+
 #### Results
 
 - Code learnt from Code Institute tutorials.
 - Code adapted up from [Stack Overflow](https://stackoverflow.com/).
+
+#### Contact Section
+
+- Code learnt from Code Institute tutorials.
+- [E-mail JS](https://www.emailjs.com/) - Javascript functionality.
+
+#### Testimonial Section
+
+- Code learnt from Code Institute tutorials.
 
 #### Footer
 
@@ -243,4 +254,4 @@ All original content.
 
 ## Disclaimer
 
-### This is for educational use
+### This is for educational use only
