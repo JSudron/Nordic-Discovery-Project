@@ -17,16 +17,16 @@
 - The following issues were found when validating the HTML code, all issues were fixed.
 
 1. 
-- Error: Stray end tag div.
-- From line 38, column 4; to line 38, column 9
+- `Error: Stray end tag div`
+- `From line 38, column 4; to line 38, column 9`
 
 2. 
-- Error: End tag section seen, but there were open elements.
-- From line 112, column 3; to line 112, column 12
+- `Error: End tag section seen, but there were open elements`
+- `From line 112, column 3; to line 112, column 12`
 
 3. 
-- Error: Unclosed element div.
-- From line 80, column 5; to line 80, column 33
+- `Error: Unclosed element div`
+- `From line 80, column 5; to line 80, column 33`
 
 ### Jigsaw W3
 
@@ -47,3 +47,11 @@
 - The Google maps API was also continuously checked in the console of the dev tools whilst testing the website.
 - Contact form was checked with each section filled out correctly to ensure the e-mail sent correctly.
 - Contact form was then partially filled in to ensure an error was shown if a box wasn't filled in correctly.
+
+## Peer-Code Review
+
+- Once the website was complete it was submitted to my peers for review.
+- The background image was coming up in a lower resolution, this was fixed by setting  `background-size: 100%;` in CSS.
+- It was suggested that the search filters would look better with rounded corners, this was achieved by adding `border-radius: 25px` in CSS.
+- The map heading was also removed as it was suggested this looked cleaner visually.
+- One user saw a scroll-bar at the bottom of the page on their screen but after numerous test this didn't occur on any screen size.
