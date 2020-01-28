@@ -8,6 +8,7 @@ body {
     padding-top: 90px;
     font-family: 'Josefin Sans', sans-serif;
     background-image: url(https://github.com/JSudron/Nordic-Discover-Project/blob/master/assets/images/background-xlarge.jpg?raw=true);
+    background-size: 100%;
     color: #09191D;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -131,6 +132,7 @@ body {
 }
 
 #category {
+    border-radius: 25px;
     width: 100%;
     height: 40px;
     margin-bottom: 15px;
@@ -147,6 +149,7 @@ body {
 }
 
 #autocomplete {
+    border-radius: 25px;
     width: 100%;
     height: 40px;
     color: #09191D;
@@ -186,9 +189,10 @@ body {
 /*-----------------------MAP */
 
 #map {
+    margin-top: 50px;
     margin-bottom: 20px;
     width: 100%;
-    height: 70vh;
+    height: 75vh;
     background: transparent;
     -webkit-border-radius: 10px;
     -moz-border-radius: 10px;
