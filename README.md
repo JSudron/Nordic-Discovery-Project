@@ -8,7 +8,7 @@ A live demo can be found [here](https://jsudron.github.io/Nordic-Discover-Projec
 
 For this project I was tasked with creating an application for a travel company called Nordic Discovery. The application allows users to search for a variety of locations within
 destinations in Scandinavia & Iceland. These include options for accomodation, restaurants, tourist attractions etc. This gives users a one-stop shop in finding the array of options available
-to them in the location selected. Tourism in Scandanavia & Iceland has been steadily increasing over the past few years & this site should help to increase that even further by helping users plan 
+to them in the location selected. Tourism in Scandinavia & Iceland has been steadily increasing over the past few years & this site should help to increase that even further by helping users plan 
 their dream holiday up north. 
 
 ## UX
