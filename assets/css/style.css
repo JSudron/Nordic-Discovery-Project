@@ -156,6 +156,14 @@ body {
     text-align: center;
 }
 
+input:focus::placeholder {
+  color: transparent;
+}
+
+input[type="text"] {
+    text-align:center;
+}
+
 .btn-primary {
     display: block;
     margin: 0 auto;

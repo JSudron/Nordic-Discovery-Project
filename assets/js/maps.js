@@ -29,11 +29,10 @@ function reset() {
     place = "";
 }
 
-
 function initMap() {
     map = new google.maps.Map(document.getElementById('map'), { 
-        zoom: countries['uk'].zoom,
-        center: countries['uk'].center,
+        zoom: countries.uk.zoom,
+        center: countries.uk.center,
         mapTypeControl: false,
         panControl: false,
         streetViewControl: false,
@@ -168,7 +167,7 @@ function onPlaceChanged() {
         if (place.geometry) {
             map.panTo(place.geometry.location);
             map.setZoom(13);
-            var search = {
+                search = {
                 bounds: map.getBounds(),
                 types: ['campground']
             };
@@ -182,7 +181,7 @@ function onPlaceChanged() {
         if (place.geometry) {
             map.panTo(place.geometry.location);
             map.setZoom(13);
-            var search = {
+                search = {
                 bounds: map.getBounds(),
                 types: ['art_gallery', 'aquarium', 'amusement_park', 'museum', 'tourist_attraction', 'zoo']
             };
@@ -196,7 +195,7 @@ function onPlaceChanged() {
         if (place.geometry) {
             map.panTo(place.geometry.location);
             map.setZoom(13);
-            var search = {
+                search = {
                 bounds: map.getBounds(),
                 types: ['park']
             };
@@ -210,7 +209,7 @@ function onPlaceChanged() {
         if (place.geometry) {
             map.panTo(place.geometry.location);
             map.setZoom(13);
-            var search = {
+                search = {
                 bounds: map.getBounds(),
                 types: ['stadium']
             };
@@ -224,7 +223,7 @@ function onPlaceChanged() {
         if (place.geometry) {
             map.panTo(place.geometry.location);
             map.setZoom(13);
-            var search = {
+                search = {
                 bounds: map.getBounds(),
                 types: ['cafe', 'restaurant', 'bakery']
             };
@@ -238,7 +237,7 @@ function onPlaceChanged() {
         if (place.geometry) {
             map.panTo(place.geometry.location);
             map.setZoom(13);
-            var search = {
+                search = {
                 bounds: map.getBounds(),
                 types: ['bar']
             };
@@ -252,7 +251,7 @@ function onPlaceChanged() {
         if (place.geometry) {
             map.panTo(place.geometry.location);
             map.setZoom(13);
-            var search = {
+                search = {
                 bounds: map.getBounds(),
                 types: ['night_club']
             };
@@ -266,7 +265,7 @@ function onPlaceChanged() {
         if (place.geometry) {
             map.panTo(place.geometry.location);
             map.setZoom(13);
-            var search = {
+                search = {
                 bounds: map.getBounds(),
                 types: ['shopping_mall', 'store', 'electronics_store', 'clothing_store', 'shoe_store', 'book_store']
             };
@@ -348,7 +347,7 @@ function addResult(result, i) {
     tr.onclick = function () {
         google.maps.event.trigger(markers[i], 'click');
 
-    }
+    };
 
     var iconTd = document.createElement('td');
     var nameTd = document.createElement('td');

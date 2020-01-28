@@ -31,7 +31,14 @@
 ### Jigsaw W3
 
 - Used to validated the CSS code. Numerous errors were found but these were withing the scripts loaded at the beginning of the page.
-- Within my custom CSS -webkit properties were identified as invalid but this was ignored.
+- Within my custom CSS `-webkit` properties were identified as invalid but this was ignored.
+
+### JSHint 
+
+- The following issues were found when validating the Javascript code, all issues were fixed.
+- `35	['uk'] is better written in dot notation`
+- `36	['uk'] is better written in dot notation`
+- `351	Missing semicolon`
 
 ### Esprima Syntax Validator
 
