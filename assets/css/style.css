@@ -7,18 +7,22 @@
 body {
     padding-top: 90px;
     font-family: 'Josefin Sans', sans-serif;
-    background-image: url(https://github.com/JSudron/Nordic-Discover-Project/blob/master/assets/images/background-xlarge.jpg?raw=true);
-    background-size: 100%;
     color: #09191D;
+    background-image: url(https://github.com/JSudron/Nordic-Discover-Project/blob/master/assets/images/background-xlarge.jpg?raw=true);
+    background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
 }
 
-.navbar .navbar-brand {
+.navbar-links{
     font-family: 'Fjalla One', sans-serif;
     font-size: 2.8rem;
     margin-bottom: 25px;
+    
 }
 
 @media (min-width: 768px) {
@@ -62,7 +66,7 @@ body {
     position: absolute;
     width: 100vw;
     z-index: 1;
-    cursor:pointer
+    cursor:pointer;
 }
 
 .navbar:hover {

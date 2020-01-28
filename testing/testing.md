@@ -51,7 +51,14 @@
 ## Peer-Code Review
 
 - Once the website was complete it was submitted to my peers for review.
-- The background image was coming up in a lower resolution, this was fixed by setting  `background-size: 100%;` in CSS.
+- The background image was coming up in a lower resolution, this was fixed by setting the below in CSS.
+    `background-size: cover;`
+    `background-repeat: no-repeat;`
+    `background-attachment: fixed;`
+    `background-position: center;`
+    `-webkit-background-size: cover;`
+    `-moz-background-size: cover;`
+    `-o-background-size: cover;`
 - It was suggested that the search filters would look better with rounded corners, this was achieved by adding `border-radius: 25px` in CSS.
 - The map heading was also removed as it was suggested this looked cleaner visually.
 - One user saw a scroll-bar at the bottom of the page on their screen but after numerous test this didn't occur on any screen size.
