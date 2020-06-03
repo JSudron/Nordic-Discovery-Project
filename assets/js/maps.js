@@ -1,5 +1,6 @@
 // This document allows the user to find various locations in a given city.
 // It then displays markers for all the places returned, with on-click details for each set of filter parameters.
+// Attempted to use const or let rather than var but this resulted in the map not appearing on the site.
 
 var map, places, infoWindow;
 var markers = [];
