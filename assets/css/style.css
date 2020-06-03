@@ -135,6 +135,10 @@ body {
     }
 }
 
+.info-box {
+    display: none;
+}
+
 #category, #autocomplete {
     border-radius: 25px;
     width: 100%;
