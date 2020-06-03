@@ -32,32 +32,38 @@ To allow users to find a variety of accomodation/attractions within any location
 
 ### User Stories
 
-#### Travel Company
+#### As a Travel Company I want to...
 
 - Have an attractive & fast website which will keep users engaged.
 - Provide a pleasant user experience so users continue to visit the site.
 - Enable users to easily find a variety of accomodation/attractions within their desired location.
 - Help to increase turnover at attractions so they'll actively advertise Nordic Discovery, e.g. via their own website.
-- In the future to drive revenue via sponsorship & advertising from searched locations & accomodation/attractions.
-- Allow users & accomodation/attractions to contact the site should they have any enquiries.
-- Showcase user testimonials to enhance the legitimacy of the website.
+- At some point in the future drive further revenue via sponsorship & advertising from searched locations & accomodation/attractions.
+- Allow site visitors to contact me should they have any enquiries.
+- Showcase user testimonials to enhance the legitimacy of my website.
 
-#### UX Designer
+#### As a UX Designer I want to...
 
 - Track user behaviour to continue to enhance the user experience.
 - Provide a website which is attractive, yet can easily be modified as per the travel companies request.
 - Ensure the functionality of the website provides the results required by the user.
 - Provide a means for the user to contact the travel company.
 
-#### Users & Customers(accomodation/attractions)
+#### As a User I want to...
 
 - Find a variety of accomodation/attractions within a desired location on one website.
-- Be able to easily contact the travel company for any issues or enquiries.
-- Be provided with the contact details for any accomodation/attractions searched for.
-- Find accomodation/attractions that may not have found without directly knowing the name of the place looking for.
-- Customers will be looking to increase the number of visitors.
-- The towns & cities will look to increase tourist numbers which will drive revenue in the area.
-- Users may find accomodation/attractions which would ordinarily only be found further down Google searches.
+- Be able to easily contact the travel company with any issues or enquiries I might have.
+- Be provided with the contact details for any accomodation/attractions searched for so I can contact them.
+- Be provided with the address details for any accomodation/attractions searched for so I can visit them.
+- Find accomodation/attractions that I may not have found without directly knowing the name of the place I'm searching for.
+- Find accomodation/attractions which I would ordinarily only have found through exstensive Google searches.
+
+#### As a Customer(owner of accomodation/attraction) I want to...
+
+- Increase the number of visitors to my accomodation/attraction.
+- Increase tourist numbers to drive revenue in the area I want to promote.
+- Have another means for potential visitors to find my accomodation/attraction other than via exstensive search engines.
+- Allow me to promote my accomodation/attraction without having to attempt to move myself higher up search engine results.
 
 ### Design
 
