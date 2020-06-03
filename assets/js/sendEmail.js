@@ -1,3 +1,7 @@
+(function(){
+            emailjs.init("user_0kg3KNjk39fsLR9fKlIoP");
+        })();
+
 function sendMail(contactForm) {
     emailjs.send("outlook", "joe", {
         "from_name": contactForm.name.value,
