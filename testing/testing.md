@@ -35,6 +35,7 @@
 
 ### JSHint 
 
+- Attempted to use let or const rather than var in the maps.js file but this resulted in the map not appearing on the site.
 - The following issues were found when validating the Javascript code, all issues were fixed.
 - `35	['uk'] is better written in dot notation`
 - `36	['uk'] is better written in dot notation`
